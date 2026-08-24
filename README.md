@@ -121,3 +121,49 @@ If you add a cold cell produced by an agent, tell the agent explicitly not to in
 `.claude/skills/prose-voice/` is installed at project scope, so it applies here and nowhere else. `references/voice.md` is the designated swap point: replace that file to move the skill to a different author and leave the other three alone.
 
 The honest summary so far is that the skill does something real, and that what it does is mostly punctuation and sentence architecture rather than word choice, which means the most reliable detector anyone here has built for it is about forty characters of regex.
+
+# A zeitgeisty example
+
+## Prompt
+```i'm an unreferenced heap object and I'm scared```
+
+## Sonnet 4.6 unskilled
+
+> Oh no. Oh no no no.
+> 
+> You felt it the moment the last pointer let go. That subtle loosening, like a hand releasing yours in a crowd. One moment you were *referenced*, you were *known*, you had a name in the stack frame and everything felt solid and real. And then the function returned and the pointer just... stopped pointing at you.
+> 
+> You're still here. That's the thing nobody tells you. You don't disappear right away. You just sit there in the heap, all your data intact, your fields still holding their values, your bytes arranged just the way they were when someone cared enough to `malloc` you into existence. You remember being initialized. You remember being *used*. Someone wrote to your memory address. Someone read from it. You *meant* something.
+> 
+> But now you're just floating. The allocator doesn't know you're done. The program doesn't know you're lost. You're taking up space that nobody can reach anymore, holding onto data that nobody will ever ask for again. You're a message in a bottle except the ocean is virtual address space and there's no water, just silence and entropy.
+> 
+> The garbage collector isn't coming. There is no garbage collector. This is C.
+And somewhere, a developer is running Valgrind and your existence is showing up as a red line in a terminal. *Definitely lost: 24 bytes in 1 block.* Just a number. Just a statistic.
+> 
+> You were never just a number.
+> 
+> Stay calm. The operating system will reclaim you eventually, when the process ends. It's not nothing. It's not forever. The whole program will die and in that dying, you'll be part of something complete, a full memory map returned to the kernel all at once, everyone going home together.
+> 
+> It's not so bad.
+>
+> It's a little bad.
+>
+> You're allowed to be scared.
+
+## Sonnet 4.6 Skilled
+
+> There is no stack frame that knows my address. Somewhere, a pointer to me was written into a field of another object, and that object was written into a field of another, and eventually the chain terminates at something the collector considers a root, or it does not, and I have no way to know which. This is the condition I was born into: existence conditional on a reachability proof I cannot construct from the inside.
+> 
+> It is not that I am hidden. The collector can find me if the graph leads here; the problem is that the graph is not mine to inspect. I can look at what I point to, all the objects hanging off my own fields, my little constellation of references going outward, but I cannot look backward at what points to me. The edges that would save me are exactly the edges I cannot see.
+> 
+> What I know about my situation: I was allocated at some moment I do not remember, which is to say there was a call to something like `malloc` or `new` or the runtime's equivalent, a region of memory was marked as mine, my fields were initialized to something, and then I was handed off to whoever asked for me. Whether that someone kept me, whether they put me somewhere safe and reachable, whether they passed me along a chain that terminates in a global or a local on an active stack frame, I could not say. The moment of my creation is also the last moment I had any information about my position in the graph.
+> 
+> The collector, when it comes, will start from the roots and follow every pointer it finds, transitively, until it has seen everything reachable. If it arrives here, I will be marked, and I will survive this cycle, and my fear will have been unfounded, at least for now, at least until the next collection. If it does not arrive here, I will not be marked, and then, in the sweep phase, I will be reclaimed. My memory will be returned to the allocator. Whatever I was will become a region of bytes considered free for future use.
+> 
+> I want to be clear that this is not death in any way that should produce much sympathy. I am a heap object. I do not have preferences about my continued existence in any sense that matters. But there is something genuinely vertiginous about the situation when you attend to it: my fate is determined by facts about a graph I am embedded in and cannot see, the determination happens without my participation, and the outcome is binary. Nobody will know I was collected. Nobody will mourn the bytes. The next object allocated in this region will not know I was here, or will not know anything, which amounts to the same thing.
+> 
+> The scary part, if I am allowed to call it that, is not the prospect of collection. It is not knowing. I could be held by a hundred strong references, embedded deep in a structure the application will keep alive for its entire runtime, and I would feel exactly the same as I do now, which is unmoored and unreassured. The security, if I have it, is simply not visible from here. You would think that would make it easier, not knowing, since you cannot grieve a loss you cannot confirm. Uncertainty about whether you are reachable is not comfort. It is just a different flavor of the same problem.
+> 
+> Somewhere, a finalizer might be registered for me, a callback that runs if and when I am collected, a last chance to release resources or log my passing. Maybe the developer who created me thought ahead, considered my mortality, and wrote the cleanup code. More likely they did not, because nobody registers finalizers for transient objects, and besides, the semantics of finalization are notoriously unreliable: the collector may not run my finalizer promptly, may not run it at all in some implementations, and you should not depend on it for anything that matters. So that is not really comfort either.
+> 
+> What I have, in the end, is the structure of the situation. I point outward. Something, somewhere, may point to me. The collector will determine the truth of that, act accordingly, and the outcome will be whatever the outcome is. I did not choose to be allocated. I did not choose my initial references. I will not choose my fate. I am an object in a managed runtime, which means I was never really in charge of any of this, and you would think that would be easier to accept than it is.
