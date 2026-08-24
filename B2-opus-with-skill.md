@@ -1,0 +1,17 @@
+# Condition B2 — Opus, prose-voice skill applied (literary nonfiction)
+
+**Prompt:** (identical to Condition A2)
+
+---
+
+## The Wiki Page Nobody Opened
+
+The page arrived at 2:14, and what I remember is not the alert, which sounded the way every alert sounds, but my hand going out toward the nightstand in the dark and finding the phone by knocking over a glass of water first, an event I registered as information rather than as a problem, since the water was already spilled and the phone was already lit and there was clearly not going to be any more sleep.
+
+Six minutes later there were nine people on the call. By 2:40 there were fourteen, and nobody had asked the extra five to join. They had joined because the channel had gone quiet in the specific way a channel goes quiet when the people in it have stopped typing and started reading, and because that silence, in an organization that has been running long enough, is legible from across the building at two in the morning to anyone who has learned to read it.
+
+We had a severity matrix, because everyone has a severity matrix. It lived on a wiki page edited four times in three years and it distinguished a total loss of a customer-facing service from a partial degradation from an internal impairment with no customer visibility, which is a perfectly serviceable taxonomy and which, on the night in question, nobody opened. I want to be careful here, because I have told this story often enough to have smoothed it, and it is possible somebody did open it and said nothing. What I am confident of is that no one cited it, and that the question of what severity we were in was settled before it was asked, by a person looking at a graph and saying that the graph was bad, in a tone that fourteen people found sufficient.
+
+I used to think that was an indictment of the matrix, or of us for not following it, and I no longer think either. An organization does not decide what counts as an emergency by consulting the document in which it wrote down what counts as an emergency. It decides by watching who has gone quiet, whose voice makes the room stop, and how fast the uninvited arrive, and it makes that decision quite well, most of the time, with a reliability the wiki page never approached. The matrix is not the procedure. It is a souvenir of a meeting where we discussed the procedure, which is a different artifact entirely, and which we then filed in a place where it could not do any harm.
+
+We had it back by five. The postmortem was thorough and blameless and generated eleven action items, of which two were eventually completed, both of them the easy ones.
