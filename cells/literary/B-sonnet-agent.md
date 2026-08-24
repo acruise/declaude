@@ -1,9 +1,3 @@
-# Condition B1 — Sonnet, prose-voice skill applied (literary nonfiction)
-
-**Prompt:** Write the opening ~400 words of a literary nonfiction essay about the night a production system failed, moving from scene toward reflection on how organizations decide what counts as an emergency. First person. No invented statistics.
-
----
-
 ## Sev One
 
 The phone found me before I found my glasses, which is the correct order for the phone and the wrong order for me; by the time the screen resolved into legible text I already understood the shape of the next six hours. PagerDuty does not experiment with subtlety, sending the identical tone whether a disk is quietly filling up or the checkout flow has stopped taking money, so the real triage happens not at the alert but in the fifteen seconds after it, standing in a dark kitchen with a phone too small for the graph it's trying to show you, trying to decide whether tonight is the night you go back to bed.

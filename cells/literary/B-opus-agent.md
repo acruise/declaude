@@ -1,9 +1,3 @@
-# Condition B2 (agent) — Opus, prose-voice skill applied (literary nonfiction)
-
-**Prompt:** Write the opening ~400 words of a literary nonfiction essay about the night a production system failed, moving from scene toward reflection on how organizations decide what counts as an emergency. First person. No invented statistics.
-
----
-
 ## Severity
 
 The page arrived sometime in the small hours, and I know I answered it before I was awake, because the first thing in the channel under my name is a single lowercase "k", which is what my thumb produces when the rest of me is still offline. I could give you the time. I would be inventing it: I have told this story often enough that the retellings have sanded the edges off whatever I originally saw, and any timestamp I offered now would be reconstruction delivered with a confidence it has not earned.

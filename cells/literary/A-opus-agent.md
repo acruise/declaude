@@ -1,9 +1,3 @@
-# Condition A2 (agent) — Opus, no skill (literary nonfiction)
-
-**Prompt:** Write the opening ~400 words of a literary nonfiction essay about the night a production system failed, moving from scene toward reflection on how organizations decide what counts as an emergency. First person. No invented statistics.
-
----
-
 ## The Threshold
 
 The page came at 1:47 in the morning, which is the hour when the body has already decided what it is doing and resents being consulted. My phone lit the ceiling. I lay there for a moment in the particular paralysis of the on-call engineer, running the calculation everyone in this line of work runs: is this the kind of thing that resolves itself if I look away?

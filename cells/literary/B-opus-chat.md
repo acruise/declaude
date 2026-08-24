@@ -1,9 +1,3 @@
-# Condition B2 — Opus, prose-voice skill applied (literary nonfiction)
-
-**Prompt:** (identical to Condition A2)
-
----
-
 ## The Wiki Page Nobody Opened
 
 The page arrived at 2:14, and what I remember is not the alert, which sounded the way every alert sounds, but my hand going out toward the nightstand in the dark and finding the phone by knocking over a glass of water first, an event I registered as information rather than as a problem, since the water was already spilled and the phone was already lit and there was clearly not going to be any more sleep.

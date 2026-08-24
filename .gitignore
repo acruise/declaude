@@ -1,4 +1,6 @@
 .idea/
+node_modules/
+dist/
 
 # build output — regenerate with `make skill`
 *.skill

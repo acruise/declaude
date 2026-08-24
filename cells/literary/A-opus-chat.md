@@ -1,9 +1,3 @@
-# Condition A2 — Opus, no skill (literary nonfiction)
-
-**Prompt:** Write the opening ~400 words of a literary nonfiction essay about the night a production system failed, moving from scene toward reflection on how organizations decide what counts as an emergency. First person. No invented statistics.
-
----
-
 ## Severity One
 
 The page came in at 2:14 in the morning, which is the hour when the body has the least to offer.

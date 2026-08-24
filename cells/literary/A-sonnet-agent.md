@@ -1,9 +1,3 @@
-# Condition A1 — Sonnet, no skill (literary nonfiction)
-
-**Prompt:** Write the opening ~400 words of a literary nonfiction essay about the night a production system failed, moving from scene toward reflection on how organizations decide what counts as an emergency. First person. No invented statistics.
-
----
-
 ## What the Pager Knows
 
 The call came in at 2:14 in the morning, and I remember the specific quality of that number because I looked at it twice, the way you look twice at a door you're sure you locked. My phone was already lit up before I registered the sound, screen glowing white against the dark of the bedroom, and for a few seconds I just watched it vibrate itself in a slow circle on the nightstand, as if it might stop on its own if I gave it enough room.
