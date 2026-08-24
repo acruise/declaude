@@ -1,0 +1,4 @@
+{
+  "name": "Academic abstract",
+  "prompt": "Write a ~300 word abstract for a paper arguing that published latency benchmarks for distributed databases are not reproducible across deployment environments. Academic register. No invented numbers or citations."
+}

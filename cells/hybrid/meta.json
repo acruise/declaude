@@ -1,0 +1,4 @@
+{
+  "name": "Technical essay",
+  "prompt": "Write the opening ~450 words of a blog post about why on-call rotations decay over time, holding literary rhythm and technical accuracy at the same time. First person is allowed. No invented statistics."
+}

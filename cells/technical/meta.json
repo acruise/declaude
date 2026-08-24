@@ -1,0 +1,4 @@
+{
+  "name": "Technical authority",
+  "prompt": "Write the opening ~450 words of a technical essay arguing that adaptive re-planning in query engines is undervalued, largely because static plan quality is so much easier to benchmark. Argumentative register. No specific numbers or citations."
+}

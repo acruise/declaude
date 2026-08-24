@@ -1,24 +1,24 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { resolve } from "node:path";
 
-// The RUN buttons post to /api/anthropic/v1/messages. This dev-only proxy adds
-// the auth headers server-side, so ANTHROPIC_API_KEY never reaches the bundle.
+const API_PORT = process.env.RATINGS_PORT || 8787;
+
+// No secrets here. The API key is read by server.mjs and used only there, so
+// the dev server never holds it and no build step can leak it into a bundle.
 export default defineConfig({
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      input: {
+        harness: resolve(__dirname, "index.html"),
+        game: resolve(__dirname, "game.html"),
+      },
+    },
+  },
   server: {
     proxy: {
-      "/api/anthropic": {
-        target: "https://api.anthropic.com",
-        changeOrigin: true,
-        rewrite: (p) => p.replace(/^\/api\/anthropic/, ""),
-        configure: (proxy) => {
-          proxy.on("proxyReq", (proxyReq) => {
-            const key = process.env.ANTHROPIC_API_KEY;
-            if (key) proxyReq.setHeader("x-api-key", key);
-            proxyReq.setHeader("anthropic-version", "2023-06-01");
-          });
-        },
-      },
+      "/api": { target: `http://localhost:${API_PORT}`, changeOrigin: true },
     },
   },
 });
